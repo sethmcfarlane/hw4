@@ -10,7 +10,7 @@
         noFill();
 
         x.push(mouseX); // equivalent to append(x, mouseX)
-        y.push(mouseY); // equivalent to append(y, mouseY)
+        y.push(mouseY + 30); // equivalent to append(y, mouseY)
 
         for (var i = 0; i < x.length; i = i + 10) {
             triangle(x[i], y[i], x[i] - 20, y[i] - 50, x[i] + 20, y[i] - 50);
