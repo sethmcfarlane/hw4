@@ -13,11 +13,12 @@
         y.push(mouseY); // equivalent to append(y, mouseY)
 
         for (var i = 0; i < x.length; i = i + 10) {
+						rectMode(RADIUS)
             rect(x[i], y[i], 1 + (x.length - i),  1 + (x.length - i));
 
         }
 
-        x = x.slice(-100); // keep the last 50 x values
-        y = y.slice(-100); // keep the last 50 y values
+        x = x.slice(-50); // keep the last 50 x values
+        y = y.slice(-50); // keep the last 50 y values
 
     }
